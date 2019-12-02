@@ -14,7 +14,8 @@ namespace Tasks.ChessBoardCore {
             }
             if(args.Length == 2)
             {
-                return true;
+               return Int32.TryParse(args[0], out int width)
+                    && Int32.TryParse(args[1], out int height);
             }
             return false;
         }
