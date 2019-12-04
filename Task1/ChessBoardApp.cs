@@ -2,33 +2,37 @@
 using System.Collections.Generic;
 using System.Text;
 using Tasks.ChessBoardCore;
+using Tasks.ChessBoardCore.EnumsString;
 using Tasks.Interfaces;
 
 namespace Tasks {
-    class ChessBoardApp {
-        IParserArguments _parserArguments;
-        IConsoleMenu _consoleMenu;
+    class ChessBoardApp 
+    {
+
+        private readonly IParserArguments _parserArguments;
+        private readonly IConsoleMenu _consoleMenu;
 
         public ChessBoardApp(IParserArguments parserArguments, IConsoleMenu consoleMenu)
         {
             _parserArguments = parserArguments;
             _consoleMenu = consoleMenu;
         }
-        public void Start(string[] args)
+
+        public void Run(string[] args)
         {
-            while (true)
+            for (; ; )
             {
                 string command = String.Empty;
-                bool isValid;
+                bool isValid = false;
 
                 if (args.Length != 0)
                 {
-                    command = args[0];
+                    command = args[0].ToLower();
                 }
 
                 switch (command)
                 {
-                    case "/create":
+                    case ChessBoardMenuText.MENU_CREATE_COMMAND:
                     {
                         isValid = _parserArguments.IsValid(args, true);
 
@@ -36,8 +40,9 @@ namespace Tasks {
                         {
                             Int32.TryParse(args[1], out int height);
                             Int32.TryParse(args[2], out int width);
-                            ChessBoard<char> chessBoard = new ChessBoard<char>(width, height, '*');
-                            Console.WriteLine(chessBoard);
+                            ChessBoard chessBoard = new ChessBoard(width, height);
+                            ChessBoardDrawer chessBoardDrawer = new ChessBoardDrawer();
+                            chessBoardDrawer.Draw(chessBoard);
                         }
                         else
                         {

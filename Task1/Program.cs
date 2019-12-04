@@ -9,7 +9,7 @@ namespace Task1 {
         static void Main(string[] args)
         {
             ChessBoardApp chessBoardApp = new ChessBoardApp(new ParserArgumentsChessBoard(), new ChessBoardMenu());
-            chessBoardApp.Start(args);
+            chessBoardApp.Run(args);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tasks.ChessBoardCore.EnumsString;
 using Tasks.Interfaces;
 
 namespace Tasks.ChessBoardCore {
@@ -8,7 +9,13 @@ namespace Tasks.ChessBoardCore {
 
         public void ShowMenu()
         {
-            Console.WriteLine("/create height width - create a board by entering the height and width of the board");
+            string menuText = String.Format("{0} {1} {2} {3}", 
+                ChessBoardMenuText.MENU_CREATE_COMMAND,
+                ChessBoardMenuText.MENU_HEIGHT_PARAM,
+                ChessBoardMenuText.MENU_WIDTH_PARAM,
+                ChessBoardMenuText.MENU_CREATE_DESCRIPTION);
+
+            Console.WriteLine(menuText);
         }
     }
 }

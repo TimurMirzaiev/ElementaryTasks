@@ -1,45 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tasks.ChessBoardCore.Enums;
 
 namespace Tasks.ChessBoardCore {
-    class ChessBoard<T> {
-        private int height;
-        private int width;
-        private IEntry<T>[,] entry;
+    class ChessBoard: Board<IEntry> 
+    {
 
-        public ChessBoard(int width, int height, T data)
-        {
-            this.height = height;
-            this.width = width;
-            entry = new IEntry<T>[width, height];
+        private int _height;
+        private int _width;
 
-            for(int j = 0; j < height; j++)
-            {
-                for (int i = 0; i < width; i++)
-                {
-                    entry[i, j] = new Entry<T>(data);
-                }
-            }
+        public int Height 
+        { 
+            get { return _height; }
+            set { _height = value; }
         }
 
-        public override string ToString()
+        public int Width 
+        { 
+            get { return _width; }
+            set { _width = value; }
+        }
+
+        public ChessBoard(int height, int width)
         {
-            StringBuilder sb = new StringBuilder();
-            for(int j = 0; j < height; j++)
+            Height = height;
+            Width = width;
+            _board = new Entry<char>[width, height];
+
+            for (int row = 0; row < height; row++)
             {
-                if (j % 2 != 0)
+                for (int column = 0; column < width; column++)
                 {
-                    sb.Append(" ");
+                    EntryColor entryColor = EntryColor.Black;
+                    if ((row + column) % 2 == 0)
+                    {
+                        entryColor = EntryColor.White;
+                    }
+                    
+                    _board[column, row] = new Entry<char>('*', entryColor);
+
                 }
-                for (int i = 0; i < width; i++)
-                {
-                    sb.Append(String.Format("{0} ", entry[i, j]));
-                }
-                sb.AppendLine();
             }
-                
-            return sb.ToString();
         }
     }
 }
