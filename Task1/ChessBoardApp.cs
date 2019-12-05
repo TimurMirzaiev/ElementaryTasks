@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Tasks.ChessBoardCore;
 using Tasks.ChessBoardCore.EnumsString;
 using Tasks.Interfaces;
 
-namespace Tasks {
-    class ChessBoardApp 
+namespace Tasks
+{
+    class ChessBoardApp
     {
 
         private readonly IParserArguments _parserArguments;

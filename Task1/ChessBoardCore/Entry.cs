@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Tasks.ChessBoardCore.Enums;
+﻿using Tasks.ChessBoardCore.Enums;
 
-namespace Tasks.ChessBoardCore {
-    class Entry<T> : IEntry {
+namespace Tasks.ChessBoardCore
+{
+    class Entry<T> : IEntry
+    {
 
         private T _data;
-        private EntryColor _entryColor;
-
-        public EntryColor EntryColor 
-        {
-            get { return _entryColor; }
-            set { _entryColor = value; }
-        }
+        public EntryColor EntryColor { get; set; }
 
         public Entry(T data, EntryColor entryColor)
         {

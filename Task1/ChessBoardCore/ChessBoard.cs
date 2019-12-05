@@ -1,25 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Tasks.ChessBoardCore.Enums;
+﻿using Tasks.ChessBoardCore.Enums;
 
-namespace Tasks.ChessBoardCore {
-    class ChessBoard: Board<IEntry> 
+namespace Tasks.ChessBoardCore
+{
+    class ChessBoard : Board<IEntry>
     {
 
         private int _height;
         private int _width;
 
-        public int Height 
-        { 
+        public int Height
+        {
             get { return _height; }
-            set { _height = value; }
+            private set { _height = value; }
         }
 
-        public int Width 
-        { 
+        public int Width
+        {
             get { return _width; }
-            set { _width = value; }
+            private set { _width = value; }
         }
 
         public ChessBoard(int height, int width)
@@ -37,9 +35,8 @@ namespace Tasks.ChessBoardCore {
                     {
                         entryColor = EntryColor.White;
                     }
-                    
-                    _board[column, row] = new Entry<char>('*', entryColor);
 
+                    _board[column, row] = new Entry<char>('*', entryColor);
                 }
             }
         }
