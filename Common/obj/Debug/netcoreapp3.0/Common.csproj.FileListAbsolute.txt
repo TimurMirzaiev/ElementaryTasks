@@ -1,0 +1,16 @@
+C:\Users\tim\Desktop\SoftServe\Task1\Common\bin\Debug\netcoreapp3.0\Common.deps.json
+C:\Users\tim\Desktop\SoftServe\Task1\Common\bin\Debug\netcoreapp3.0\Common.dll
+C:\Users\tim\Desktop\SoftServe\Task1\Common\bin\Debug\netcoreapp3.0\Common.pdb
+C:\Users\tim\Desktop\SoftServe\Task1\Common\obj\Debug\netcoreapp3.0\Common.csprojAssemblyReference.cache
+C:\Users\tim\Desktop\SoftServe\Task1\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfoInputs.cache
+C:\Users\tim\Desktop\SoftServe\Task1\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\Task1\Common\obj\Debug\netcoreapp3.0\Common.dll
+C:\Users\tim\Desktop\SoftServe\Task1\Common\obj\Debug\netcoreapp3.0\Common.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Common\bin\Debug\netcoreapp3.0\Common.deps.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Common\bin\Debug\netcoreapp3.0\Common.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Common\bin\Debug\netcoreapp3.0\Common.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Common\obj\Debug\netcoreapp3.0\Common.csprojAssemblyReference.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfoInputs.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Common\obj\Debug\netcoreapp3.0\Common.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Common\obj\Debug\netcoreapp3.0\Common.pdb
