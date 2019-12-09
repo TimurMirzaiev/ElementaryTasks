@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1_ChessBoard", "1_ChessBoar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks", "Tasks\Tasks.csproj", "{C0E4D101-17A2-4069-AED1-6ABD317FCC90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_Envelopes", "2_Envelopes\2_Envelopes.csproj", "{83DB3E6E-76C8-44BD-A8FD-AC4C00E035AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_Envelopes", "2_Envelopes\2_Envelopes.csproj", "{83DB3E6E-76C8-44BD-A8FD-AC4C00E035AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_LuckyTickets", "6_HappyTickets\6_LuckyTickets.csproj", "{1E8D4B91-376D-438E-87CD-418A67DD3225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{83DB3E6E-76C8-44BD-A8FD-AC4C00E035AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83DB3E6E-76C8-44BD-A8FD-AC4C00E035AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83DB3E6E-76C8-44BD-A8FD-AC4C00E035AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8D4B91-376D-438E-87CD-418A67DD3225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8D4B91-376D-438E-87CD-418A67DD3225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8D4B91-376D-438E-87CD-418A67DD3225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8D4B91-376D-438E-87CD-418A67DD3225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,4 +6,8 @@
     <RootNamespace>_2_Envelopes</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+
 </Project>

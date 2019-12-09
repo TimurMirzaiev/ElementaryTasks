@@ -1,0 +1,14 @@
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\bin\Debug\netcoreapp3.0\6_LuckyTickets.exe
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\bin\Debug\netcoreapp3.0\6_LuckyTickets.deps.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\bin\Debug\netcoreapp3.0\6_LuckyTickets.runtimeconfig.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\bin\Debug\netcoreapp3.0\6_LuckyTickets.runtimeconfig.dev.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\bin\Debug\netcoreapp3.0\6_LuckyTickets.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\bin\Debug\netcoreapp3.0\6_LuckyTickets.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\obj\Debug\netcoreapp3.0\6_LuckyTickets.csprojAssemblyReference.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\obj\Debug\netcoreapp3.0\6_LuckyTickets.AssemblyInfoInputs.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\obj\Debug\netcoreapp3.0\6_LuckyTickets.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\obj\Debug\netcoreapp3.0\6_LuckyTickets.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\obj\Debug\netcoreapp3.0\6_LuckyTickets.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\bin\Debug\netcoreapp3.0\Common.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\bin\Debug\netcoreapp3.0\Common.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\6_HappyTickets\obj\Debug\netcoreapp3.0\6_LuckyTickets.csproj.CopyComplete
