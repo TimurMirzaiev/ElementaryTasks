@@ -18,7 +18,7 @@ namespace _2_Envelopes
 
         public void Run(string[] args)
         {
-            for (; ; )
+            /*for (; ; )
             {
                 string command = string.Empty;
                 bool isValid = false;
@@ -55,7 +55,7 @@ namespace _2_Envelopes
                     }
                 }
                 args = Console.ReadLine().Split(' ');
-            }
+            }*/
         }
     }
 }

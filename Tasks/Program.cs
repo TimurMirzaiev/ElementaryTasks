@@ -11,8 +11,6 @@ namespace Tasks
             //ChessBoardApp chessBoardApp = new ChessBoardApp(new ParserArgumentsChessBoard(), new ChessBoardMenu());
             //chessBoardApp.Run(args);
 
-
-
             //TaskRunner taskRunner = new TaskRunner();
             //taskRunner.Run();
         }

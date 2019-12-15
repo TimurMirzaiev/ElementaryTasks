@@ -1,0 +1,3 @@
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.csprojAssemblyReference.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.AssemblyInfoInputs.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.AssemblyInfo.cs
