@@ -1,0 +1,13 @@
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\bin\Debug\netcoreapp3.0\3_Triangles.exe
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\obj\Debug\netcoreapp3.0\3_Triangles.csprojAssemblyReference.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\obj\Debug\netcoreapp3.0\3_Triangles.AssemblyInfoInputs.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\obj\Debug\netcoreapp3.0\3_Triangles.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\bin\Debug\netcoreapp3.0\3_Triangles.deps.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\bin\Debug\netcoreapp3.0\3_Triangles.runtimeconfig.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\bin\Debug\netcoreapp3.0\3_Triangles.runtimeconfig.dev.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\bin\Debug\netcoreapp3.0\3_Triangles.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\bin\Debug\netcoreapp3.0\3_Triangles.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\bin\Debug\netcoreapp3.0\FluentValidation.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\obj\Debug\netcoreapp3.0\3_Triangles.csproj.CopyComplete
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\obj\Debug\netcoreapp3.0\3_Triangles.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\3_Triangles\obj\Debug\netcoreapp3.0\3_Triangles.pdb

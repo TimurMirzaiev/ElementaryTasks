@@ -1,3 +1,15 @@
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.csprojAssemblyReference.cache
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.AssemblyInfoInputs.cache
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\2_Envelopes.exe
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\Common.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\Common.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.csproj.CopyComplete
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\2_Envelopes.deps.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\2_Envelopes.runtimeconfig.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\2_Envelopes.runtimeconfig.dev.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\2_Envelopes.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\2_Envelopes.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\bin\Debug\netcoreapp3.0\FluentValidation.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\2_Envelopes\obj\Debug\netcoreapp3.0\2_Envelopes.pdb

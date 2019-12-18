@@ -1,4 +1,6 @@
-﻿using Common.Interfaces;
+﻿using _2_Envelopes.EnvelopeCore;
+using _2_Envelopes.EnvelopeCore.MenuStrings;
+using Common.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,22 +9,20 @@ namespace _2_Envelopes
 {
     class EnvelopesApp
     {
-        private readonly IParserArguments _parserArguments;
-        private readonly IConsoleMenu _consoleMenu;
+        private readonly EnvelopesMenu _envelopesMenu;
 
-        public EnvelopesApp(IParserArguments parserArguments, IConsoleMenu consoleMenu)
+        public EnvelopesApp()
         {
-            _parserArguments = parserArguments;
-            _consoleMenu = consoleMenu;
+            _envelopesMenu = new EnvelopesMenu();
         }
 
         public void Run(string[] args)
         {
-            /*for (; ; )
-            {
-                string command = string.Empty;
-                bool isValid = false;
+            bool isExit = false;
+            string command = string.Empty;
 
+            while (isExit == false)
+            {
                 if (args.Length != 0)
                 {
                     command = args[0].ToLower();
@@ -30,32 +30,52 @@ namespace _2_Envelopes
 
                 switch (command)
                 {
-                    case ChessBoardMenuText.MENU_CREATE_COMMAND:
+                    case EnvelopesMenuText.MENU_COMPARE_COMMAND:
                     {
-                        isValid = _parserArguments.IsValid(args, true);
+                        
+                        AnalyzerEnvelopes analyzerEnvelopes = new AnalyzerEnvelopes();
+                        
+                        try
+                        {
+                            Console.WriteLine(EnvelopesMenuText.ENTER_DATA);
+                            Console.Write(EnvelopesMenuText.ENTER_SIDE_A);
+                            double a = _envelopesMenu.ReadSide();
+                            Console.Write(EnvelopesMenuText.ENTER_SIDE_B);
+                            double b = _envelopesMenu.ReadSide();
+                            Console.Write(EnvelopesMenuText.ENTER_SIDE_C);
+                            double c = _envelopesMenu.ReadSide();
+                            Console.Write(EnvelopesMenuText.ENTER_SIDE_D);
+                            double d = _envelopesMenu.ReadSide();
 
-                        if (isValid)
-                        {
-                            int.TryParse(args[1], out int height);
-                            int.TryParse(args[2], out int width);
-                            ChessBoard chessBoard = new ChessBoard(width, height);
-                            ChessBoardDrawer chessBoardDrawer = new ChessBoardDrawer();
-                            chessBoardDrawer.Draw(chessBoard);
+                            Envelope first = Envelope.CreateEnvelope(a, b);
+                            Envelope second = Envelope.CreateEnvelope(c, d);
+
+                            bool result = analyzerEnvelopes.IsPackable(first, second);
+
+                            _envelopesMenu.ShowComparableResult(result);
                         }
-                        else
+                        catch (ArgumentException ex)
                         {
-                            _consoleMenu.ShowMenu();
+                            _envelopesMenu.ShowMenu();
+                            //
                         }
+                        
+                        break;
+                    }
+                    case EnvelopesMenuText.MENU_EXIT_COMMAND:
+                    {
+                        isExit = true;
                         break;
                     }
                     default:
                     {
-                        _consoleMenu.ShowMenu();
+                        _envelopesMenu.ShowMenu();
                         break;
                     }
                 }
-                args = Console.ReadLine().Split(' ');
-            }*/
+
+                command = _envelopesMenu.ReadCommand();
+            }
         }
     }
 }

@@ -36,7 +36,7 @@ namespace _6_LuckyTickets.LuckyTicketsCore.LuckyTicketStrategy
             {
                 for (min = 1; min <= max; min++)
                 {
-                    if (strategy.IsLuckyTicket(new Ticket(rank, min)))
+                    if (strategy.IsLuckyTicket(Ticket.CreateTicket(rank, min)))
                     {
                         count++;
                     }

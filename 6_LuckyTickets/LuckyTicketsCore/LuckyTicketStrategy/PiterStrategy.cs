@@ -3,6 +3,7 @@ using _6_LuckyTickets.LuckyTicketsCore.Model;
 using _6_LuckyTickets.LuckyTicketsCore.Validation;
 using System;
 using FluentValidation.Results;
+using _6_LuckyTickets.LuckyTicketsCore.Exceptions;
 
 namespace _6_LuckyTickets.LuckyTicketsCore.LuckyTicketStrategy
 {
@@ -30,6 +31,10 @@ namespace _6_LuckyTickets.LuckyTicketsCore.LuckyTicketStrategy
                     }
                 }
                 res = sumOfEven == sumOfOdd;
+            }
+            else
+            {
+                throw new InvalidLuckyTicketStrategy();
             }
 
             return res;

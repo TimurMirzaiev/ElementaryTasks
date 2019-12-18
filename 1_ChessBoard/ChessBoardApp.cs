@@ -19,7 +19,9 @@ namespace _1_ChessBoard
 
         public void Run(string[] args)
         {
-            for (; ; )
+            bool isExit = false;
+
+            while( isExit == false)
             {
                 string command = string.Empty;
                 bool isValid = false;
@@ -47,6 +49,11 @@ namespace _1_ChessBoard
                         {
                             _consoleMenu.ShowMenu();
                         }
+                        break;
+                    }
+                    case ChessBoardMenuText.MENU_EXIT_COMMAND:
+                    {
+                        isExit = true;
                         break;
                     }
                     default:

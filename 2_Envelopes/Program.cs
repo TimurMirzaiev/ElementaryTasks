@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2_Envelopes.EnvelopeCore;
+using System;
 
 namespace _2_Envelopes
 {
@@ -6,7 +7,8 @@ namespace _2_Envelopes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            EnvelopesApp envelopesApp = new EnvelopesApp();
+            envelopesApp.Run(args);
         }
     }
 }

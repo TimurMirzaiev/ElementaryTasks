@@ -3,6 +3,8 @@ using _6_LuckyTickets.LuckyTicketsCore.Model;
 using _6_LuckyTickets.LuckyTicketsCore.Validation;
 using System;
 using FluentValidation.Results;
+using _6_LuckyTickets.LuckyTicketsCore.Exceptions;
+
 namespace _6_LuckyTickets.LuckyTicketsCore.LuckyTicketStrategy
 {
     public class MoscowStrategy : ILuckyTicketStrategy
@@ -25,11 +27,14 @@ namespace _6_LuckyTickets.LuckyTicketsCore.LuckyTicketStrategy
 
                 for (int i = ticket.Length / 2; i < ticket.Length; i++)
                 {
-
                     sumOfSecondHalf += ticket[i];
                 }
 
                 res = sumOfFirstHalf == sumOfSecondHalf;
+            }
+            else
+            {
+                throw new InvalidLuckyTicketStrategy();
             }
 
             return res;
