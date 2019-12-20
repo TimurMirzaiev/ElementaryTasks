@@ -1,0 +1,14 @@
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\obj\Debug\netcoreapp3.0\4_FileParser.csprojAssemblyReference.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\obj\Debug\netcoreapp3.0\4_FileParser.AssemblyInfoInputs.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\obj\Debug\netcoreapp3.0\4_FileParser.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\bin\Debug\netcoreapp3.0\4_FileParser.exe
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\bin\Debug\netcoreapp3.0\4_FileParser.deps.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\bin\Debug\netcoreapp3.0\4_FileParser.runtimeconfig.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\bin\Debug\netcoreapp3.0\4_FileParser.runtimeconfig.dev.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\bin\Debug\netcoreapp3.0\4_FileParser.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\bin\Debug\netcoreapp3.0\4_FileParser.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\obj\Debug\netcoreapp3.0\4_FileParser.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\obj\Debug\netcoreapp3.0\4_FileParser.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\bin\Debug\netcoreapp3.0\Common.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\bin\Debug\netcoreapp3.0\Common.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\4_FileParser\obj\Debug\netcoreapp3.0\4_FileParser.csproj.CopyComplete

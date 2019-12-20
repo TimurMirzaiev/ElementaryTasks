@@ -9,15 +9,11 @@ namespace _2_Envelopes.EnvelopeCore
         public bool IsPackable(Envelope a, Envelope b)
         {
             int res = a.CompareTo(b);
-            bool isPackable;
+            bool isPackable = false;
 
-            if(res == 1)
+            if(res != 0)
             {
                 isPackable = true;
-            }
-            else
-            {
-                isPackable = false;
             }
 
             return isPackable;
