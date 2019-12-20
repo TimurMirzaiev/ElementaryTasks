@@ -19,11 +19,11 @@ namespace _7_8_Sequences
         public void Run(string[] args)
         {
             bool isExit = false;
+            SequencesUI sequencesUI = new SequencesUI();
+            SequenceAnalyzer sequenceAnalyzer = new SequenceAnalyzer();
 
             while (isExit == false)
             {
-                SequencesUI sequencesUI = new SequencesUI();
-                SequenceAnalyzer 
                 string command = string.Empty;
                 bool isValid = false;
 

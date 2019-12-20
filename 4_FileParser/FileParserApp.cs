@@ -3,6 +3,7 @@ using _4_FileParser.FileParserCore.ConsoleUI;
 using Common.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace _4_FileParser
@@ -59,7 +60,7 @@ namespace _4_FileParser
                         {
                             //
                         }
-                        catch(ArgumentException ex)
+                        catch(IOException ex)
                         {
                             //
                         }
@@ -87,7 +88,7 @@ namespace _4_FileParser
                         {
                             //
                         }
-                        catch (ArgumentException ex)
+                        catch (IOException ex)
                         {
                             //
                         }
