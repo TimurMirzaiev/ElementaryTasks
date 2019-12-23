@@ -1,12 +1,11 @@
 ﻿using Common.Interfaces;
-using System;
 using System.Linq;
 
 namespace _1_ChessBoard.ChessBoardCore
 {
     public class ParserArgumentsChessBoard : IParserArguments
     {
-        public bool IsValid(string[] args, bool skipFirstArgument)
+        public bool IsValid(string[] args, bool skipFirstArgument = false)
         {
             bool result = false;
 

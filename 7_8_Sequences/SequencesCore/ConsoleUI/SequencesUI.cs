@@ -22,5 +22,17 @@ namespace _7_8_Sequences.SequencesCore.ConsoleUI
         {
             return Console.ReadLine()?.Split(' ');
         }
+
+        public void ShowSequence(IEnumerable<int> sequence)
+        {
+            StringBuilder builder = new StringBuilder();
+
+            foreach(int num in sequence)
+            {
+                builder.Append(String.Format("{0}, ", num));
+            }
+
+            Console.WriteLine(builder.ToString());
+        }
     }
 }

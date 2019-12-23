@@ -1,0 +1,14 @@
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\bin\Debug\netcoreapp3.0\7_8_Sequences.exe
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\bin\Debug\netcoreapp3.0\7_8_Sequences.deps.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\bin\Debug\netcoreapp3.0\7_8_Sequences.runtimeconfig.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\bin\Debug\netcoreapp3.0\7_8_Sequences.runtimeconfig.dev.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\bin\Debug\netcoreapp3.0\7_8_Sequences.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\bin\Debug\netcoreapp3.0\7_8_Sequences.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\bin\Debug\netcoreapp3.0\Common.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\bin\Debug\netcoreapp3.0\Common.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\obj\Debug\netcoreapp3.0\7_8_Sequences.csprojAssemblyReference.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\obj\Debug\netcoreapp3.0\7_8_Sequences.AssemblyInfoInputs.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\obj\Debug\netcoreapp3.0\7_8_Sequences.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\obj\Debug\netcoreapp3.0\7_8_Sequences.csproj.CopyComplete
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\obj\Debug\netcoreapp3.0\7_8_Sequences.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\7_8_Sequences\obj\Debug\netcoreapp3.0\7_8_Sequences.pdb

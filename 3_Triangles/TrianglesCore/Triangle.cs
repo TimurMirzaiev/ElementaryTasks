@@ -12,8 +12,8 @@ namespace _3_Triangles.TrianglesCore
         public double SideB { get; }
         public double SideC { get; }
         public string Name { get; }
-        public double Area { get; }
-        public double Perimeter { get; }
+        public double Area { get; private set; }
+        public double Perimeter { get; private set; }
 
         private Triangle(string name, double sideA, double sideB, double sideC)
         {
@@ -29,7 +29,7 @@ namespace _3_Triangles.TrianglesCore
         {
             if(Perimeter == 0)
             {
-                CalculatePerimeter();
+                Perimeter = CalculatePerimeter();
             }
 
             double halfPerimeter = Perimeter / DIVIDER_TWO;

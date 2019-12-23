@@ -3,6 +3,7 @@ using _7_8_Sequences.SequencesCore.ConsoleUI;
 using Common.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace _7_8_Sequences
@@ -20,12 +21,12 @@ namespace _7_8_Sequences
         {
             bool isExit = false;
             SequencesUI sequencesUI = new SequencesUI();
-            SequenceAnalyzer sequenceAnalyzer = new SequenceAnalyzer();
 
             while (isExit == false)
             {
                 string command = string.Empty;
                 bool isValid = false;
+                IEnumerable<int> sequence = Enumerable.Empty<int>();
 
                 if (args.Length != 0)
                 {
@@ -39,6 +40,12 @@ namespace _7_8_Sequences
                         args = sequencesUI.ReadArgs();
                         isValid = _parserArguments.IsValidCommandSquareLessThan(args);
                         
+                        if (isValid)
+                        {
+                            Int32.TryParse(args[0], out int n);
+                            sequence = Sequence.GetNumberSequenceSquareLessThan(n);
+                            sequencesUI.ShowSequence(sequence);
+                        }
 
                         sequencesUI.ShowMenu();
                         break;

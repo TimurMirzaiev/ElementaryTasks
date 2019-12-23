@@ -2,7 +2,7 @@
 
 namespace _1_ChessBoard.ChessBoardCore
 {
-    class Entry<T> : IEntry
+    public class Entry<T> : IEntry
     {
 
         private T _data;

@@ -1,7 +1,7 @@
-C:\Users\tim\Desktop\SoftServe\Task1\1_ChessBoard\obj\Debug\netcoreapp3.0\1_ChessBoard.csprojAssemblyReference.cache
-C:\Users\tim\Desktop\SoftServe\Task1\1_ChessBoard\obj\Debug\netcoreapp3.0\1_ChessBoard.AssemblyInfoInputs.cache
-C:\Users\tim\Desktop\SoftServe\Task1\1_ChessBoard\obj\Debug\netcoreapp3.0\1_ChessBoard.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\1_ChessBoard.exe
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\1_ChessBoard.deps.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\1_ChessBoard.runtimeconfig.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\1_ChessBoard.runtimeconfig.dev.json
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\1_ChessBoard.dll
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\1_ChessBoard.pdb
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\Common.dll
@@ -12,3 +12,6 @@ C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\obj\Debug\netcoreapp
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\obj\Debug\netcoreapp3.0\1_ChessBoard.csproj.CopyComplete
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\obj\Debug\netcoreapp3.0\1_ChessBoard.dll
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\obj\Debug\netcoreapp3.0\1_ChessBoard.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\Serilog.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\Serilog.Sinks.File.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\1_ChessBoard\bin\Debug\netcoreapp3.0\FluentValidation.dll

@@ -1,6 +1,6 @@
 ﻿namespace _1_ChessBoard.ChessBoardCore.Enums
 {
-    enum EntryColor
+    public enum EntryColor
     {
         White,
         Black

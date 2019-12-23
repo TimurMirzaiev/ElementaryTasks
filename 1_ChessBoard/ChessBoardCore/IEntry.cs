@@ -2,7 +2,7 @@
 
 namespace _1_ChessBoard.ChessBoardCore
 {
-    interface IEntry
+    public interface IEntry
     {
         EntryColor EntryColor { get; set; }
     }

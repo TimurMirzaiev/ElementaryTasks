@@ -1,0 +1,11 @@
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\bin\Debug\netcoreapp3.0\5_NumberInWord.exe
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\bin\Debug\netcoreapp3.0\5_NumberInWord.deps.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\bin\Debug\netcoreapp3.0\5_NumberInWord.runtimeconfig.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\bin\Debug\netcoreapp3.0\5_NumberInWord.runtimeconfig.dev.json
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\bin\Debug\netcoreapp3.0\5_NumberInWord.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\bin\Debug\netcoreapp3.0\5_NumberInWord.pdb
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\obj\Debug\netcoreapp3.0\5_NumberInWord.csprojAssemblyReference.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\obj\Debug\netcoreapp3.0\5_NumberInWord.AssemblyInfoInputs.cache
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\obj\Debug\netcoreapp3.0\5_NumberInWord.AssemblyInfo.cs
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\obj\Debug\netcoreapp3.0\5_NumberInWord.dll
+C:\Users\tim\Desktop\SoftServe\ElementaryTasks\5_NumberInWord\obj\Debug\netcoreapp3.0\5_NumberInWord.pdb

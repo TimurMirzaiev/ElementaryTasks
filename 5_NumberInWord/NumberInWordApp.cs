@@ -19,6 +19,7 @@ namespace _5_NumberInWord
                 string command = string.Empty;
                 string[] continueAnswers = { "y", "yes" };
                 string answer = string.Empty;
+                string res = String.Empty;
 
                 if (args.Length != 0)
                 {
@@ -29,7 +30,19 @@ namespace _5_NumberInWord
                 {
                     case MenuText.MENU_TRANSFORM_COMMAND:
                     {
+                        NumberTransformer numberTransformer = new NumberTransformer();
+                        args = _numberInWordUI.ReadArgs();
                         
+                        if(args.Length == 1 
+                            && Int32.TryParse(args[0], out int number))
+                        {
+                            res = NumberTransformer.Str(number);
+                            Console.WriteLine(res);
+                        }
+                        else
+                        {
+                            _numberInWordUI.ShowMenu();
+                        }
                         break;
                     }
                     case MenuText.MENU_EXIT_COMMAND:

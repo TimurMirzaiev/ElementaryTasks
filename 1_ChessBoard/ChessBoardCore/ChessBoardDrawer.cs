@@ -9,6 +9,7 @@ namespace _1_ChessBoard.ChessBoardCore
         public void Draw(ChessBoard chessBoard)
         {
             StringBuilder res = new StringBuilder();
+
             for (int j = 0; j < chessBoard.Width; j++)
             {
                 if (j % 2 != 0)
@@ -22,6 +23,7 @@ namespace _1_ChessBoard.ChessBoardCore
                 }
                 res.AppendLine();
             }
+
             Console.WriteLine(res.ToString());
         }
     }

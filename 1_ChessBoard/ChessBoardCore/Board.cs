@@ -1,6 +1,6 @@
 ﻿namespace _1_ChessBoard.ChessBoardCore
 {
-    class Board<T>
+    public class Board<T>
     {
 
         protected T[,] _board;

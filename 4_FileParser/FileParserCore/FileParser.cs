@@ -1,20 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Abstractions;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
 namespace _4_FileParser.FileParserCore
 {
-    class FileParser
+    public class FileParser: IFileParser
     {
+        private IFileSystem _fileSystem;
+        
+        public FileParser(IFileSystem fileSystem)
+        {
+            _fileSystem = fileSystem;
+        }
 
         public int Count(string path, string line)
         {
-            if (File.Exists(path))
+            if(_fileSystem.File.Exists(path))
             {
-                using (StreamReader reader = new StreamReader(path))
+                using (StreamReader reader = _fileSystem.File.OpenText(path))
                 {
                     string thisLine = string.Empty;
                     int count = 0;
@@ -30,7 +37,6 @@ namespace _4_FileParser.FileParserCore
             }
             else
             {
-                //log
                 throw new FileNotFoundException();
             }
         }
@@ -39,17 +45,17 @@ namespace _4_FileParser.FileParserCore
         {
             try
             {
-                FileInfo fileInfo = new FileInfo(path);
+                IFileInfo fileInfo = _fileSystem.FileInfo.FromFileName(path);
                 string backup = "backup.txt";
                 string thisLine = string.Empty;
-                string bufferFile = Path.GetTempFileName();
+                string bufferFile = _fileSystem.Path.GetTempFileName();
                 string newLine = string.Empty;
-                DirectoryInfo directory = fileInfo.Directory;
+                IDirectoryInfo directory = fileInfo.Directory;
 
-                File.Copy(path, $@"{fileInfo.Directory}\{backup}", true);
+                _fileSystem.File.Copy(path, $@"{fileInfo.Directory}\{backup}", true);
 
-                StreamReader reader = new StreamReader(path);
-                StreamWriter writer = new StreamWriter(bufferFile);
+                StreamReader reader = _fileSystem.File.OpenText(path);
+                var writer = _fileSystem.File.CreateText(bufferFile);
 
                 while (!reader.EndOfStream)
                 {
@@ -59,12 +65,11 @@ namespace _4_FileParser.FileParserCore
                 }
                 reader.Close();
                 writer.Close();
-                File.Delete(path);
-                File.Move(bufferFile, $@"{directory.FullName}\{fileInfo.Name}");
+                _fileSystem.File.Delete(path);
+                _fileSystem.File.Move(bufferFile, $@"{directory.FullName}\{fileInfo.Name}");
             }
             catch (IOException ex)
             {
-                //Log.Logger.Error($"{ex.Message}");
                 throw ex;
             }
         }

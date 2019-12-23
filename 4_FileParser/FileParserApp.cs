@@ -1,6 +1,7 @@
 ﻿using _4_FileParser.FileParserCore;
 using _4_FileParser.FileParserCore.ConsoleUI;
 using Common.Interfaces;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,14 +9,16 @@ using System.Text;
 
 namespace _4_FileParser
 {
-    class FileParserApp
+    public class FileParserApp
     {
-        private FileParser _fileParser;
-        private ParserArguments _parserArguments;
+        private readonly IFileParser _fileParser;
+        private readonly FileParserUI _fileParserUI;
+        private readonly ParserArguments _parserArguments;
 
-        public FileParserApp()
+        public FileParserApp(IFileParser fileParser)
         {
-            _fileParser = new FileParser();
+            _fileParser = fileParser;
+            _fileParserUI = new FileParserUI();
             _parserArguments = new ParserArguments();
         }
 
@@ -25,84 +28,100 @@ namespace _4_FileParser
 
             while (isExit == false)
             {
-                FileParserUI fileParserUI = new FileParserUI();
-                FileParser fileParser = new FileParser();
-
                 string command = string.Empty;
-                bool isValid = false;
 
                 if (args.Length == 1)
                 {
                     command = args[0].ToLower();
                 }
 
+                bool isValid;
                 switch (command)
                 {
                     case MenuText.MENU_COUNT_COMMAND:
                     {
-                        int count = 0;
+                        _fileParserUI.ShowCountCommandParams();
+
                         try
                         {
-                            args = fileParserUI.ReadArgs();
+                            args = _fileParserUI.ReadArgs();
                             isValid = _parserArguments.IsValidCommandCounting(args);
 
                             if (isValid)
                             {
-                                count = fileParser.Count(args[0], args[1]);
-                                fileParserUI.ShowCountOfStrings(count);
+                                try
+                                {
+                                    int count = _fileParser.Count(args[0], args[1]);
+                                    _fileParserUI.ShowCountOfStrings(count);
+                                }
+                                catch (ArgumentException ex)
+                                {
+                                    Log.Logger.Error("ArgumentException: {0}", ex.Message);
+                                }
                             }
                             else
                             {
-                                throw new ArgumentException();
+                                Log.Logger.Error("Invalid arguments for command {0}",
+                                    MenuText.MENU_COUNT_COMMAND);
                             }
                         }
                         catch (FormatException ex)
                         {
-                            //
+                            Log.Logger.Error("FormatException: {0}", ex.Message);
                         }
-                        catch(IOException ex)
+                        catch (IOException ex)
                         {
-                            //
+                            Log.Logger.Error("IOException: {0}", ex.Message);
                         }
 
                         break;
                     }
                     case MenuText.MENU_REPLACE_COMMAND:
                     {
-                        int count = 0;
+                        _fileParserUI.ShowReplaceCommandParams();
+
                         try
                         {
-                            args = fileParserUI.ReadArgs();
+                            args = _fileParserUI.ReadArgs();
                             isValid = _parserArguments.IsValidCommandReplace(args);
 
                             if (isValid)
                             {
-                                fileParser.Replace(args[0], args[1], args[2]);
+                                try
+                                {
+                                    _fileParser.Replace(args[0], args[1], args[2]);
+                                }
+                                catch (ArgumentException ex)
+                                {
+                                    Log.Logger.Error("ArgumentException: {0}", ex.Message);
+                                }
                             }
                             else
                             {
-                                throw new ArgumentException();
+                                Log.Logger.Error("Invalid arguments for command {0}",
+                                    MenuText.MENU_COUNT_DESCRIPTION);
                             }
                         }
                         catch (FormatException ex)
                         {
-                            //
+                            Log.Logger.Error("FormatException: {0}", ex.Message);
                         }
                         catch (IOException ex)
                         {
-                            //
+                            Log.Logger.Error("IOException: {0}", ex.Message);
                         }
 
                         break;
                     }
                     default:
                     {
-                        fileParserUI.ShowMenu();
+                        Log.Logger.Information("Invalid arguments");
+                        _fileParserUI.ShowMenu();
                         break;
                     }
                 }
 
-                args = fileParserUI.ReadArgs();
+                args = _fileParserUI.ReadArgs();
             }
         }
     }

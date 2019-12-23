@@ -11,13 +11,34 @@ namespace _4_FileParser.FileParserCore.ConsoleUI
             StringBuilder res = new StringBuilder();
 
             res.Append(MenuText.MENU_COUNT_COMMAND);
-            res.Append(String.Format(" {0}", MenuText.MENU_PATH_PARAM));
-            res.AppendLine(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
+            res.AppendLine(MenuText.MENU_COUNT_DESCRIPTION);
+            //res.Append(String.Format(" {0}", MenuText.MENU_PATH_PARAM));
+            //res.AppendLine(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
 
-            res.Append(MenuText.MENU_REPLACE_COMMAND);
-            res.Append(String.Format(" {0}", MenuText.MENU_PATH_PARAM));
-            res.Append(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
-            res.AppendLine(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
+            res.Append(MenuText.MENU_COUNT_DESCRIPTION);
+            res.AppendLine(MenuText.MENU_REPLACE_DESCRIPTION);
+            //res.Append(String.Format(" {0}", MenuText.MENU_PATH_PARAM));
+            //res.Append(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
+            //res.AppendLine(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
+
+            Console.WriteLine(res);
+        }
+
+        public void ShowCountCommandParams()
+        {
+            string res = String.Format("{0} {1}",
+                MenuText.MENU_PATH_PARAM,
+                MenuText.MENU_CURRENT_STRING_PARAM);
+
+            Console.WriteLine(res);
+        }
+
+        public void ShowReplaceCommandParams()
+        {
+            string res = String.Format("{0} {1} {2}",
+                   MenuText.MENU_PATH_PARAM,
+                   MenuText.MENU_CURRENT_STRING_PARAM,
+                   MenuText.MENU_REPLACE_STRING_PARAM);
 
             Console.WriteLine(res);
         }
@@ -37,7 +58,7 @@ namespace _4_FileParser.FileParserCore.ConsoleUI
             StringBuilder res = new StringBuilder();
 
             res.Append(String.Format(" {0}", MenuText.MENU_PATH_PARAM));
-            res.AppendLine(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
+            res.AppendLine(String.Format(" {0}", MenuText.MENU_CURRENT_STRING_PARAM));
 
             Console.WriteLine(res);
         }
@@ -47,8 +68,8 @@ namespace _4_FileParser.FileParserCore.ConsoleUI
             StringBuilder res = new StringBuilder();
 
             res.Append(String.Format(" {0}", MenuText.MENU_PATH_PARAM));
-            res.Append(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
-            res.AppendLine(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
+            res.Append(String.Format(" {0}", MenuText.MENU_CURRENT_STRING_PARAM));
+            res.AppendLine(String.Format(" {0}", MenuText.MENU_REPLACE_STRING_PARAM));
 
             Console.WriteLine(res);
         }

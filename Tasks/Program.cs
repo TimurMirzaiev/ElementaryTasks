@@ -1,6 +1,4 @@
-﻿using _1_ChessBoard;
-using _1_ChessBoard.ChessBoardCore;
-using System;
+﻿using System;
 
 namespace Tasks
 {

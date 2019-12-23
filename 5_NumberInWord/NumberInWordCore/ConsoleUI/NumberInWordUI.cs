@@ -6,14 +6,19 @@ namespace _5_NumberInWord.NumberInWordCore.ConsoleUI
 {
     class NumberInWordUI
     {
-        internal void ShowMenu()
+        public void ShowMenu()
         {
-            throw new NotImplementedException();
+            StringBuilder res = new StringBuilder();
+
+            res.AppendLine(MenuText.MENU_TRANSFORM_COMMAND);
+            res.AppendLine(MenuText.MENU_EXIT_COMMAND);
+
+            Console.WriteLine(res.ToString());
         }
 
-        internal string[] ReadArgs()
+        public string[] ReadArgs()
         {
-            throw new NotImplementedException();
+            return Console.ReadLine()?.Split(' ');
         }
     }
 }

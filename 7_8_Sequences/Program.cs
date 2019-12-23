@@ -6,7 +6,8 @@ namespace _7_8_Sequences
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SequencesApp sequencesApp = new SequencesApp();
+            sequencesApp.Run(args);
         }
     }
 }
