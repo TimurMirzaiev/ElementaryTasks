@@ -1,11 +1,8 @@
-﻿using _4_FileParser.FileParserCore;
-using _4_FileParser.FileParserCore.ConsoleUI;
-using Common.Interfaces;
-using Serilog;
+﻿using Serilog;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
+using _4_FileParser.FileParserCore;
+using _4_FileParser.FileParserCore.ConsoleUI;
 
 namespace _4_FileParser
 {
@@ -29,13 +26,13 @@ namespace _4_FileParser
             while (isExit == false)
             {
                 string command = string.Empty;
+                bool isValid;
 
                 if (args.Length == 1)
                 {
                     command = args[0].ToLower();
                 }
 
-                bool isValid;
                 switch (command)
                 {
                     case MenuText.MENU_COUNT_COMMAND:
@@ -74,6 +71,7 @@ namespace _4_FileParser
                             Log.Logger.Error("IOException: {0}", ex.Message);
                         }
 
+                        _fileParserUI.ShowMenu();
                         break;
                     }
                     case MenuText.MENU_REPLACE_COMMAND:
@@ -90,6 +88,7 @@ namespace _4_FileParser
                                 try
                                 {
                                     _fileParser.Replace(args[0], args[1], args[2]);
+                                    _fileParserUI.ShowReplaceIsOk();
                                 }
                                 catch (ArgumentException ex)
                                 {
@@ -111,6 +110,12 @@ namespace _4_FileParser
                             Log.Logger.Error("IOException: {0}", ex.Message);
                         }
 
+                        _fileParserUI.ShowMenu();
+                        break;
+                    }
+                    case MenuText.MENU_EXIT_COMMAND:
+                    {
+                        isExit = true;
                         break;
                     }
                     default:

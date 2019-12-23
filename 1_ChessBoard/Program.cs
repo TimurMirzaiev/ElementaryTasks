@@ -1,10 +1,5 @@
-﻿using _1_ChessBoard;
+﻿using Serilog;
 using _1_ChessBoard.ChessBoardCore;
-using Common.Interfaces;
-using Serilog;
-using System;
-using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace _1_ChessBoard
 {
@@ -14,7 +9,8 @@ namespace _1_ChessBoard
         {
             RegisterLogger();
 
-            ChessBoardApp chessBoardApp = new ChessBoardApp(new ParserArgumentsChessBoard(), new ChessBoardMenu());
+            ChessBoardApp chessBoardApp = new ChessBoardApp(new ParserArgumentsChessBoard(),
+                new ChessBoardMenu());
             chessBoardApp.Run(args);
         }
 

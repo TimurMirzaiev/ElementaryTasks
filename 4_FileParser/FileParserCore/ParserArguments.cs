@@ -1,12 +1,9 @@
 ﻿using Common.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace _4_FileParser.FileParserCore
 {
-    class ParserArguments : IParserArguments
+    public class ParserArguments : IParserArguments
     {
         public bool IsValid(string[] args, bool skipFirstArgument = false)
         {
@@ -17,7 +14,7 @@ namespace _4_FileParser.FileParserCore
                 args = args.Skip(1).ToArray();
             }
 
-            if(args.Length == 1)
+            if (args.Length == 1)
             {
                 res = true;
             }
@@ -29,7 +26,7 @@ namespace _4_FileParser.FileParserCore
         {
             bool res = false;
 
-            if(args.Length == 2)
+            if (args.Length == 2)
             {
                 res = true;
             }

@@ -4,8 +4,7 @@ namespace _1_ChessBoard.ChessBoardCore
 {
     public class Entry<T> : IEntry
     {
-
-        private T _data;
+        private readonly T _data;
         public EntryColor EntryColor { get; set; }
 
         public Entry(T data, EntryColor entryColor)

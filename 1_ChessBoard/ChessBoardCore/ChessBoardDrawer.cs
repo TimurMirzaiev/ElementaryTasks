@@ -10,14 +10,14 @@ namespace _1_ChessBoard.ChessBoardCore
         {
             StringBuilder res = new StringBuilder();
 
-            for (int j = 0; j < chessBoard.Width; j++)
+            for (int j = 0; j < chessBoard.Height; j++)
             {
                 if (j % 2 != 0)
                 {
                     res.Append(string.Format(" "));
                 }
 
-                for (int i = 0; i < chessBoard.Height; i++)
+                for (int i = 0; i < chessBoard.Width; i++)
                 {
                     res.Append(string.Format("{0} ", chessBoard[j, i]));
                 }

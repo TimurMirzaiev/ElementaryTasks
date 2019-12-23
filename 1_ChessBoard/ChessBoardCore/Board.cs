@@ -5,15 +5,15 @@
 
         protected T[,] _board;
 
-        public T this[int column, int row]
+        public T this[int row, int column]
         {
             get
             {
-                return _board[column, row];
+                return _board[row, column];
             }
             set
             {
-                _board[column, row] = value;
+                _board[row, column] = value;
             }
         }
     }

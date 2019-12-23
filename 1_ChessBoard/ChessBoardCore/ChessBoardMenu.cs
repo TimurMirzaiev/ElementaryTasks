@@ -1,6 +1,6 @@
-﻿using _1_ChessBoard.ChessBoardCore.MenuStrings;
-using Common.Interfaces;
+﻿using Common.Interfaces;
 using System;
+using _1_ChessBoard.ChessBoardCore.MenuStrings;
 
 namespace _1_ChessBoard.ChessBoardCore
 {

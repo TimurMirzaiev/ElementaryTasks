@@ -1,11 +1,9 @@
 ﻿using FluentValidation;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _1_ChessBoard.ChessBoardCore
 {
-    public class ChessBoardValidator: AbstractValidator<ChessBoard>
+    public class ChessBoardValidator : AbstractValidator<ChessBoard>
     {
         public ChessBoardValidator()
         {

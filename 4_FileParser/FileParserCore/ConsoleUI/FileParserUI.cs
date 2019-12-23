@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace _4_FileParser.FileParserCore.ConsoleUI
@@ -12,14 +11,9 @@ namespace _4_FileParser.FileParserCore.ConsoleUI
 
             res.Append(MenuText.MENU_COUNT_COMMAND);
             res.AppendLine(MenuText.MENU_COUNT_DESCRIPTION);
-            //res.Append(String.Format(" {0}", MenuText.MENU_PATH_PARAM));
-            //res.AppendLine(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
 
-            res.Append(MenuText.MENU_COUNT_DESCRIPTION);
+            res.Append(MenuText.MENU_REPLACE_COMMAND);
             res.AppendLine(MenuText.MENU_REPLACE_DESCRIPTION);
-            //res.Append(String.Format(" {0}", MenuText.MENU_PATH_PARAM));
-            //res.Append(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
-            //res.AppendLine(String.Format(" {0}", MenuText.MENU_STRING_PARAM));
 
             Console.WriteLine(res);
         }
@@ -72,6 +66,11 @@ namespace _4_FileParser.FileParserCore.ConsoleUI
             res.AppendLine(String.Format(" {0}", MenuText.MENU_REPLACE_STRING_PARAM));
 
             Console.WriteLine(res);
+        }
+
+        internal void ShowReplaceIsOk()
+        {
+            throw new NotImplementedException();
         }
     }
 }

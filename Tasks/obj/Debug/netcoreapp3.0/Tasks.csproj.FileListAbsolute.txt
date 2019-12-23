@@ -4,13 +4,8 @@ C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\bin\Debug\netcoreapp3.0\Tas
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\bin\Debug\netcoreapp3.0\Tasks.runtimeconfig.dev.json
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\bin\Debug\netcoreapp3.0\Tasks.dll
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\bin\Debug\netcoreapp3.0\Tasks.pdb
-C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\bin\Debug\netcoreapp3.0\1_ChessBoard.dll
-C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\bin\Debug\netcoreapp3.0\Common.dll
-C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\bin\Debug\netcoreapp3.0\1_ChessBoard.pdb
-C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\bin\Debug\netcoreapp3.0\Common.pdb
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\obj\Debug\netcoreapp3.0\Tasks.csprojAssemblyReference.cache
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\obj\Debug\netcoreapp3.0\Tasks.AssemblyInfoInputs.cache
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\obj\Debug\netcoreapp3.0\Tasks.AssemblyInfo.cs
-C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\obj\Debug\netcoreapp3.0\Tasks.csproj.CopyComplete
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\obj\Debug\netcoreapp3.0\Tasks.dll
 C:\Users\tim\Desktop\SoftServe\ElementaryTasks\Tasks\obj\Debug\netcoreapp3.0\Tasks.pdb

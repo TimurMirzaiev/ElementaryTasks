@@ -1,0 +1,1 @@
+1_ChessBoard.exe /create 5 10

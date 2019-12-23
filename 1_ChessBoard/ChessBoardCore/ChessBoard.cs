@@ -1,6 +1,6 @@
-﻿using _1_ChessBoard.ChessBoardCore.Enums;
-using FluentValidation.Results;
+﻿using FluentValidation.Results;
 using System;
+using _1_ChessBoard.ChessBoardCore.Enums;
 
 namespace _1_ChessBoard.ChessBoardCore
 {
@@ -13,23 +13,8 @@ namespace _1_ChessBoard.ChessBoardCore
         {
             Height = height;
             Width = width;
-            _board = new Entry<char>[width, height];
-            EntryColor entryColor;
 
-            for (int row = 0; row < width; row++)
-            {
-                for (int column = 0; column < height; column++)
-                {
-                    entryColor = EntryColor.Black;
-
-                    if ((row + column) % 2 == 0)
-                    {
-                        entryColor = EntryColor.White;
-                    }
-
-                    _board[row, width] = new Entry<char>('*', entryColor);
-                }
-            }
+            FillBoard(height, width);
         }
 
         public static ChessBoard CreateChessBoard(int height, int width)
@@ -54,6 +39,27 @@ namespace _1_ChessBoard.ChessBoardCore
             }
 
             throw new ArgumentException();
+        }
+
+        private void FillBoard(int height, int width)
+        {
+            EntryColor entryColor;
+            _board = new Entry<char>[height, width];
+
+            for (int row = 0; row < height; row++)
+            {
+                for (int column = 0; column < width; column++)
+                {
+                    entryColor = EntryColor.Black;
+
+                    if ((row + column) % 2 == 0)
+                    {
+                        entryColor = EntryColor.White;
+                    }
+
+                    _board[row, column] = new Entry<char>('*', entryColor);
+                }
+            }
         }
     }
 }

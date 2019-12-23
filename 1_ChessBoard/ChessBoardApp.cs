@@ -1,8 +1,8 @@
-﻿using _1_ChessBoard.ChessBoardCore;
-using _1_ChessBoard.ChessBoardCore.MenuStrings;
-using Common.Interfaces;
+﻿using Common.Interfaces;
 using Serilog;
 using System;
+using _1_ChessBoard.ChessBoardCore;
+using _1_ChessBoard.ChessBoardCore.MenuStrings;
 
 namespace _1_ChessBoard
 {
@@ -22,7 +22,7 @@ namespace _1_ChessBoard
         {
             bool isExit = false;
 
-            while( isExit == false)
+            while (isExit == false)
             {
                 string command = string.Empty;
                 bool isValid = false;
@@ -46,10 +46,12 @@ namespace _1_ChessBoard
                             try
                             {
                                 ChessBoard chessBoard = ChessBoard.CreateChessBoard(height, width);
+                                Log.Logger.Information("ChessBoard is created correctly");
                                 ChessBoardDrawer chessBoardDrawer = new ChessBoardDrawer();
                                 chessBoardDrawer.Draw(chessBoard);
+                                Log.Logger.Information("ChessBoard is displayed correctly");
                             }
-                            catch(ArgumentException ex)
+                            catch (ArgumentException ex)
                             {
                                 Log.Logger.Error("ArgumentException: {0}", ex.Message);
                                 _consoleMenu.ShowMenu();
@@ -57,7 +59,7 @@ namespace _1_ChessBoard
                         }
                         else
                         {
-                            Log.Logger.Error("Invalid arguments for command {0}", 
+                            Log.Logger.Error("Invalid arguments for command {0}",
                                 ChessBoardMenuText.MENU_CREATE_COMMAND);
                             _consoleMenu.ShowMenu();
                         }
