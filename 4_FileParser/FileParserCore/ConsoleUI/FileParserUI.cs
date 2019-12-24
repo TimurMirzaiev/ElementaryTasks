@@ -68,9 +68,9 @@ namespace _4_FileParser.FileParserCore.ConsoleUI
             Console.WriteLine(res);
         }
 
-        internal void ShowReplaceIsOk()
+        public void ShowReplaceIsOk()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(MenuText.MENU_RESULT_REPLACE_IS_OK);
         }
     }
 }

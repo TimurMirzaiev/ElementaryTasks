@@ -49,6 +49,7 @@ namespace _4_FileParser
                                 try
                                 {
                                     int count = _fileParser.Count(args[0], args[1]);
+                                    Log.Logger.Information("Calculate count of string is executed correctly");
                                     _fileParserUI.ShowCountOfStrings(count);
                                 }
                                 catch (ArgumentException ex)
@@ -88,6 +89,7 @@ namespace _4_FileParser
                                 try
                                 {
                                     _fileParser.Replace(args[0], args[1], args[2]);
+                                    Log.Logger.Information("Replace string is executed correctly");
                                     _fileParserUI.ShowReplaceIsOk();
                                 }
                                 catch (ArgumentException ex)
@@ -120,7 +122,7 @@ namespace _4_FileParser
                     }
                     default:
                     {
-                        Log.Logger.Information("Invalid arguments");
+                        Log.Logger.Error("Invalid arguments");
                         _fileParserUI.ShowMenu();
                         break;
                     }
